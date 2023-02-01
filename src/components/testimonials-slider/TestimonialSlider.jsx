@@ -7,21 +7,26 @@ function TestimonialSlider({ ...data }) {
   const [next, setNext] = useState(true);
 
   const handleOnClickPrev = () => {
-    if (index === 0) {
-      setPrev(false);
-    } else {
-      setPrev(true);
-      setIndex(index - 1);
-    }
+    if (index === 0) return;
+    setPrev(true);
+    setIndex(index - 1);
   };
   const handleOnClickNext = () => {
+    if (index >= Object.keys(data).length - 1) return;
+    setNext(true);
+    setIndex(index + 1);
+  };
+
+  useEffect(() => {
     if (index >= Object.keys(data).length - 1) {
       setNext(false);
-    } else {
-      setNext(true);
-      setIndex(index + 1);
+      setPrev(true);
     }
-  };
+    if (index === 0) {
+      setNext(true);
+      setPrev(false);
+    }
+  }, [index]);
 
   return (
     <div className={styles.box}>

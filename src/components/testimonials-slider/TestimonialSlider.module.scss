@@ -44,9 +44,11 @@
 }
 
 .active-arrow {
+  opacity: 1;
   cursor: pointer;
 }
 .inactive-arrow {
+  opacity: 0.4;
   cursor: default;
 }
 
@@ -131,7 +133,7 @@
     line-height: 43px;
     text-align: left;
     p {
-      padding-top: 40px;
+      padding-top: 30px;
       width: 90%;
     }
   }
