@@ -4,7 +4,11 @@ import TestimonialSlider from "./components/testimonials-slider/TestimonialSlide
 import data from "../src/lib/data.json";
 
 function App() {
-  return <TestimonialSlider {...data}></TestimonialSlider>;
+  return (
+    <main>
+      <TestimonialSlider {...data}></TestimonialSlider>
+    </main>
+  );
 }
 
 export default App;

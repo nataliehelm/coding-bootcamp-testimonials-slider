@@ -35,6 +35,7 @@ function TestimonialSlider({ ...data }) {
           <img
             src={`images/${data[index].image}`}
             className={styles["slider-image"]}
+            alt="Profile photo"
           ></img>
           <div className={styles["controls"]}>
             <img
@@ -43,6 +44,7 @@ function TestimonialSlider({ ...data }) {
               className={
                 prev ? styles["active-arrow"] : styles["inactive-arrow"]
               }
+              alt="left arrow"
             ></img>
             <img
               src="images/icon-next.svg"
@@ -50,6 +52,7 @@ function TestimonialSlider({ ...data }) {
               className={
                 next ? styles["active-arrow"] : styles["inactive-arrow"]
               }
+              alt="right arrow"
             ></img>
           </div>
         </div>
@@ -58,13 +61,13 @@ function TestimonialSlider({ ...data }) {
             <p>{data[index].testimonial}</p>
           </div>
           <div className={styles["personal-info"]}>
-            <p className={styles.name}>{data[index].name}</p>
-            <p className={styles.position}>{data[index].position}</p>
+            <h1 className={styles.name}>{data[index].name}</h1>
+            <h2 className={styles.position}>{data[index].position}</h2>
           </div>
         </div>
       </div>
       <div className={styles["pattern-curve"]}>
-        <img src="images/pattern-curve.svg"></img>
+        <img src="images/pattern-curve.svg" alt="pattern"></img>
       </div>
     </div>
   );
