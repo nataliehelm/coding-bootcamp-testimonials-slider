@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/nataliehelm/coding-bootcamp-testimonials-slider)
-- Live Site URL: [](https://nataliehelm.github.io/coding-bootcamp-testimonials-slider/)
+- Live Site URL: [website](https://nataliehelm.github.io/coding-bootcamp-testimonials-slider/)
 
 ## My process
 
